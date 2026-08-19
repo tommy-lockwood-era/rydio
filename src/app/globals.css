@@ -10,6 +10,15 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-open-sans);
+
+  --color-text: var(--foreground);
+
+  --color-brand-green-300: #7ca88a;
+  --color-brand-green-400: #58826c;
+  --color-brand-green-500: #325b47;
+  --color-brand-green-base: #1c4532; /* 600 */
+
+  --yellow-button-gradient: linear-gradient(112deg, #fce92c 18.92%, #ffcc00 67.36%);
 }
 
 /* Dark theme */
@@ -20,8 +29,20 @@
   }
 }
 
+/* Element Selector */
+/* <body> */
 body {
   background: var(--background); /* site background */
   color: var(--foreground); /* default text color */
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Class Selector */
+/* <div className='card'> <form class='card'> <p class='card' */
+.card {
+  background: var(--background);
+  color: var(--foreground);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
